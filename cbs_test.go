@@ -1,9 +1,11 @@
-package cbs
+package cbsgo_test
 
 import (
 	"reflect"
 	"sort"
 	"testing"
+
+	"github.com/matthds/cbsgo"
 )
 
 func TestCBS(t *testing.T) {
@@ -18,7 +20,7 @@ func TestCBS(t *testing.T) {
 	// The main split is between the low and high part.
 	expected := [][2]int{{0, 8}, {8, 14}}
 
-	res, err := CBS(steps, shuffles, p, seed)
+	res, err := cbsgo.CBS(steps, shuffles, p, seed)
 	if err != nil {
 		t.Fatalf("CBS function returned an unexpected error: %v", err)
 	}

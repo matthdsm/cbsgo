@@ -1,4 +1,4 @@
-module github.com/mattdsm/cbs
+module github.com/mattdsm/cbsgo
 
 go 1.23.5
 

@@ -1,4 +1,4 @@
-package cbs
+package cbsgo
 
 import (
 	"math"
